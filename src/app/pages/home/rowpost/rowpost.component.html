@@ -1,0 +1,9 @@
+<div class="row">
+    <h2>{{ title }}</h2>
+    <div class="posters"   >
+        <div *ngFor="let obj of movies">
+            <img [ngClass]="issmal ? 'smallposter' : 'poster'" (click)="functionName()" [src]="image + obj.backdrop_path" alt="poster" />
+        </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,11 @@
+<div [style.backgroundImage]="'url(' + (movie ? image + movie.backdrop_path : '') + ')'" loading="lazy" class="Banner">
+  <div class="content text-white">
+    <h1 class="title">{{ movie ? movie.title : '' }}</h1>
+    <div class="banner_buttons">
+      <button class="button">Play</button>
+      <button class="button">My list</button>
+    </div>
+    <h1 class="description">{{ movie ? movie.overview : '' }}</h1>
+    <div class="fade_bottom"></div>
+  </div>
+</div>
